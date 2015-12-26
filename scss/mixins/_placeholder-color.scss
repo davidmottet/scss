@@ -1,0 +1,38 @@
+//  Mixins Placeholder color
+//  -----------------------------
+
+@mixin placeholder-color ($color, $focus) {
+  &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $color;
+    &:focus{
+      color: $focus;
+    }
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: $color;
+   opacity:  1;
+   &:focus{
+      color: $focus;
+      opacity:  1;
+   }
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: $color;
+   opacity:  1;
+   &:focus{
+      color: $focus;
+      opacity:  1;
+   }
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color;
+    &:focus{
+      color: $focus;
+    }
+  }
+}
+
+//  USE -----------------------------
+//  .foo{
+//    @include placeholder-color(red, blue);
+//  }
