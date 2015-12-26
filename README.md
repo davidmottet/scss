@@ -1,4 +1,4 @@
-# scss
+# SCSS personal frameworks 
 
 ## Usage
 The following commands are available in your project:
