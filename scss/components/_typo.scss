@@ -1,0 +1,76 @@
+//  Components Typo
+//  -----------------------------
+
+body{
+    //Goutiere
+    margin: 20px;
+
+    font-family: $font-family-import, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+
+    /*Repère visuel
+    background-image: -webkit-linear-gradient(top, #ffffff, #ffffff 98%, #000000 100%);
+    background-size: 1.5em;
+    background-position: 0 -5px;
+    */
+    color: $color-text;
+}
+
+p, ul, ol, blockquote{ margin-bottom: 1.5em; }
+
+a{ color: $color-link; }
+
+h1, h2, h3, h4, h5, h6{ margin-bottom: 24px; color: $color-headings; }
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.325em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1.125em; }
+h5,h6 { font-size: 1em; }
+
+ul, ol{ margin-left: 40px; }
+
+ul{ list-style: circle; }
+ul ul, ol ul{ list-style: disc inside; margin-bottom: 0; overflow: hidden; }
+ol{ list-style: decimal; }
+ol ol, ul ol{ list-style: lower-roman inside; margin-bottom: 0; overflow: hidden; }
+
+strong{ color: darken($color-text, 30); font-weight: bold; }
+
+blockquote{
+    font-family: $font-family-import-blockquote;
+    font-style: italic;
+
+    border-left: 5px solid $color-link;
+
+    margin: 0 60px 1.5em 45px;
+    padding-left: 15px;
+
+    overflow: hidden;
+    em{
+        display: block;
+
+        font-family: $font-family-import, Arial, Helvetica, sans-serif;
+        font-style: normal;
+
+        text-align: right;
+        &:before{
+            content: "-"
+        }
+    }
+    p{ margin-bottom: 0; }
+}
+p{
+  img{
+    &.align-left{
+        float: left; margin-right: 20px;
+    }
+    &.align-right{
+        float: right; margin-left: 20px;
+    }
+    &.align-center{
+        display: block; margin: 0 auto;
+    }
+  }
+}
+//  -----------------------------
