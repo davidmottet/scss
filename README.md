@@ -6,3 +6,5 @@ The following commands are available in your project:
 # Start for simple development
 sass --watch scss/app.scss:css/app.css
 ```
+
+## Grid
